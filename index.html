@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f4b115;
+      margin: 0px;
+    }
+    .banner-container {
+      padding: 8px;
+    }
+    .banner-list {
+      overflow: auto;
+      white-space: nowrap;
+      font-size: 0;
+    }
+    .banner-item {
+      height: 108px;
+      object-fit: fill;
+      max-width: 280px;
+    }
+    .banner-item:last-of-type {
+      /* padding-right: 8px; */
+    }
+    .banner-item + .banner-item {
+      padding-left: 8px;
+    }
+  </style>
+  <body>
+    <div class="banner-container">
+      <div class="banner-list">
+        <img class="banner-item" src="./media/0.png" />
+        <img class="banner-item" src="./media/1.jpg" />
+        <img class="banner-item" src="./media/3.jpg" />
+        <img class="banner-item" src="./media/7.png" />
+        <img class="banner-item" src="./media/5.jpg" />
+        <img class="banner-item" src="./media/6.jpg" />
+      </div>
+    </div>
+  </body>
+</html>
